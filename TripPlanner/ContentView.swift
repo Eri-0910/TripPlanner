@@ -9,8 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        TripListView().overlay(
+                Button(action:{}
+                ){VStack {
+                    Text("+")
+                        .font(.largeTitle)
+                        .foregroundColor(Color.white)
+                }
+                .frame(minWidth: 70.0, minHeight: 70.0)
+                .background(Color.green)
+                }
+                .cornerRadius(35.0)
+                .padding()
+                ,alignment: .bottomTrailing)
+        
     }
 }
 

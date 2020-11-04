@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		02F76375E2B8CD5BD20D5036 /* Pods_TripPlannerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436825A265A8F39A7670D5FF /* Pods_TripPlannerTests.framework */; };
+		8001FE842552E56C0048FD1F /* TripListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8001FE832552E56C0048FD1F /* TripListView.swift */; };
+		8001FE942552ECDE0048FD1F /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8001FE932552ECDE0048FD1F /* Schedule.swift */; };
 		806A86B42552A3180044CFF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A86B32552A3180044CFF4 /* AppDelegate.swift */; };
 		806A86B62552A3180044CFF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A86B52552A3180044CFF4 /* SceneDelegate.swift */; };
 		806A86B82552A3180044CFF4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A86B72552A3180044CFF4 /* ContentView.swift */; };
@@ -44,6 +46,9 @@
 		436825A265A8F39A7670D5FF /* Pods_TripPlannerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TripPlannerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43DC286A30AA429BA25FF3A8 /* Pods_TripPlanner_TripPlannerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TripPlanner_TripPlannerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		719849C4E633AC21BF76E012 /* Pods-TripPlanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripPlanner.release.xcconfig"; path = "Target Support Files/Pods-TripPlanner/Pods-TripPlanner.release.xcconfig"; sourceTree = "<group>"; };
+		8001FE4F2552E0840048FD1F /* TripPlanner copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "TripPlanner copy-Info.plist"; path = "/Users/erina/Programming/Swift/TripPlanner/TripPlanner copy-Info.plist"; sourceTree = "<absolute>"; };
+		8001FE832552E56C0048FD1F /* TripListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListView.swift; sourceTree = "<group>"; };
+		8001FE932552ECDE0048FD1F /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		806A86B02552A3180044CFF4 /* TripPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		806A86B32552A3180044CFF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		806A86B52552A3180044CFF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +130,7 @@
 				806A86B12552A3180044CFF4 /* Products */,
 				00A3D3428CCD5240D10376A9 /* Pods */,
 				5F3B49A3B206380290E9FA4C /* Frameworks */,
+				8001FE4F2552E0840048FD1F /* TripPlanner copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,9 +148,11 @@
 			isa = PBXGroup;
 			children = (
 				806A86B32552A3180044CFF4 /* AppDelegate.swift */,
+				8001FE832552E56C0048FD1F /* TripListView.swift */,
 				806A86B52552A3180044CFF4 /* SceneDelegate.swift */,
 				806A86B72552A3180044CFF4 /* ContentView.swift */,
 				806A86EC2552A5860044CFF4 /* Trip.swift */,
+				8001FE932552ECDE0048FD1F /* Schedule.swift */,
 				806A86B92552A31B0044CFF4 /* Assets.xcassets */,
 				806A86BE2552A31B0044CFF4 /* LaunchScreen.storyboard */,
 				806A86C12552A31B0044CFF4 /* Info.plist */,
@@ -417,9 +425,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8001FE942552ECDE0048FD1F /* Schedule.swift in Sources */,
 				806A86ED2552A5860044CFF4 /* Trip.swift in Sources */,
 				806A86B42552A3180044CFF4 /* AppDelegate.swift in Sources */,
 				806A86B62552A3180044CFF4 /* SceneDelegate.swift in Sources */,
+				8001FE842552E56C0048FD1F /* TripListView.swift in Sources */,
 				806A86B82552A3180044CFF4 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,6 +477,134 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8001FE542552E0E40048FD1F /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG STAGING";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Staging;
+		};
+		8001FE552552E0E40048FD1F /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E64C30E8D19CC88032FF360B /* Pods-TripPlanner.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TripPlanner/Preview Content\"";
+				DEVELOPMENT_TEAM = 28SXSBFN7H;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TripPlanner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Erina.Yamakawa.TripPlanner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
+		};
+		8001FE562552E0E40048FD1F /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D41CBC54FF4F84D17EC2E1A5 /* Pods-TripPlannerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 28SXSBFN7H;
+				INFOPLIST_FILE = TripPlannerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Erina.Yamakawa.TripPlannerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TripPlanner.app/TripPlanner";
+			};
+			name = Staging;
+		};
+		8001FE572552E0E40048FD1F /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1ED6C4A7BE67E41EA753AD09 /* Pods-TripPlanner-TripPlannerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 28SXSBFN7H;
+				INFOPLIST_FILE = TripPlannerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Erina.Yamakawa.TripPlannerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TripPlanner;
+			};
+			name = Staging;
+		};
 		806A86D82552A31B0044CFF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -518,7 +656,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -573,7 +711,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -724,6 +862,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				806A86D82552A31B0044CFF4 /* Debug */,
+				8001FE542552E0E40048FD1F /* Staging */,
 				806A86D92552A31B0044CFF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -733,6 +872,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				806A86DB2552A31B0044CFF4 /* Debug */,
+				8001FE552552E0E40048FD1F /* Staging */,
 				806A86DC2552A31B0044CFF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -742,6 +882,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				806A86DE2552A31B0044CFF4 /* Debug */,
+				8001FE562552E0E40048FD1F /* Staging */,
 				806A86DF2552A31B0044CFF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -751,6 +892,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				806A86E12552A31B0044CFF4 /* Debug */,
+				8001FE572552E0E40048FD1F /* Staging */,
 				806A86E22552A31B0044CFF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
