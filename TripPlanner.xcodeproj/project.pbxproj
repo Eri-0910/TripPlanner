@@ -10,6 +10,8 @@
 		02F76375E2B8CD5BD20D5036 /* Pods_TripPlannerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436825A265A8F39A7670D5FF /* Pods_TripPlannerTests.framework */; };
 		8001FE842552E56C0048FD1F /* TripListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8001FE832552E56C0048FD1F /* TripListView.swift */; };
 		8001FE942552ECDE0048FD1F /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8001FE932552ECDE0048FD1F /* Schedule.swift */; };
+		8001FE992552EF3E0048FD1F /* TripAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8001FE982552EF3E0048FD1F /* TripAddView.swift */; };
+		8001FEA625540F960048FD1F /* TripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8001FEA525540F960048FD1F /* TripView.swift */; };
 		806A86B42552A3180044CFF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A86B32552A3180044CFF4 /* AppDelegate.swift */; };
 		806A86B62552A3180044CFF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A86B52552A3180044CFF4 /* SceneDelegate.swift */; };
 		806A86B82552A3180044CFF4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A86B72552A3180044CFF4 /* ContentView.swift */; };
@@ -49,6 +51,8 @@
 		8001FE4F2552E0840048FD1F /* TripPlanner copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "TripPlanner copy-Info.plist"; path = "/Users/erina/Programming/Swift/TripPlanner/TripPlanner copy-Info.plist"; sourceTree = "<absolute>"; };
 		8001FE832552E56C0048FD1F /* TripListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListView.swift; sourceTree = "<group>"; };
 		8001FE932552ECDE0048FD1F /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		8001FE982552EF3E0048FD1F /* TripAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripAddView.swift; sourceTree = "<group>"; };
+		8001FEA525540F960048FD1F /* TripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripView.swift; sourceTree = "<group>"; };
 		806A86B02552A3180044CFF4 /* TripPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		806A86B32552A3180044CFF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		806A86B52552A3180044CFF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -151,12 +155,14 @@
 				8001FE832552E56C0048FD1F /* TripListView.swift */,
 				806A86B52552A3180044CFF4 /* SceneDelegate.swift */,
 				806A86B72552A3180044CFF4 /* ContentView.swift */,
+				8001FE982552EF3E0048FD1F /* TripAddView.swift */,
 				806A86EC2552A5860044CFF4 /* Trip.swift */,
 				8001FE932552ECDE0048FD1F /* Schedule.swift */,
 				806A86B92552A31B0044CFF4 /* Assets.xcassets */,
 				806A86BE2552A31B0044CFF4 /* LaunchScreen.storyboard */,
 				806A86C12552A31B0044CFF4 /* Info.plist */,
 				806A86BB2552A31B0044CFF4 /* Preview Content */,
+				8001FEA525540F960048FD1F /* TripView.swift */,
 			);
 			path = TripPlanner;
 			sourceTree = "<group>";
@@ -428,7 +434,9 @@
 				8001FE942552ECDE0048FD1F /* Schedule.swift in Sources */,
 				806A86ED2552A5860044CFF4 /* Trip.swift in Sources */,
 				806A86B42552A3180044CFF4 /* AppDelegate.swift in Sources */,
+				8001FEA625540F960048FD1F /* TripView.swift in Sources */,
 				806A86B62552A3180044CFF4 /* SceneDelegate.swift in Sources */,
+				8001FE992552EF3E0048FD1F /* TripAddView.swift in Sources */,
 				8001FE842552E56C0048FD1F /* TripListView.swift in Sources */,
 				806A86B82552A3180044CFF4 /* ContentView.swift in Sources */,
 			);

@@ -14,4 +14,26 @@ class Trip: Object {
     @objc dynamic var start = Date()
     @objc dynamic var end = Date()
     let schedule = List<Schedule>()
+    
+    func save() {
+           let realm = try! Realm()
+           if realm.isInWriteTransaction {
+               if self.id == 0 { self.id = self.createNewId() }
+               realm.add(self)
+           } else {
+               try! realm.write {
+                   if self.id == 0 { self.id = self.createNewId() }
+                   realm.add(self)
+               }
+           }
+       }
+
+   private func createNewId() -> Int {
+       let realm = try! Realm()
+       return (realm.objects(type(of: self).self).sorted(byKeyPath: "id").last?.id ?? 0) + 1
+   }
+    
+    override static func primaryKey() -> String? {
+           return "id"
+       }
 }
