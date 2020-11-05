@@ -12,6 +12,8 @@
 		8001FE942552ECDE0048FD1F /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8001FE932552ECDE0048FD1F /* Schedule.swift */; };
 		8001FE992552EF3E0048FD1F /* TripAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8001FE982552EF3E0048FD1F /* TripAddView.swift */; };
 		8001FEA625540F960048FD1F /* TripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8001FEA525540F960048FD1F /* TripView.swift */; };
+		8001FEAB255412720048FD1F /* ScheduleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8001FEAA255412720048FD1F /* ScheduleListView.swift */; };
+		8001FEB0255413C40048FD1F /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8001FEAF255413C40048FD1F /* AccountView.swift */; };
 		806A86B42552A3180044CFF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A86B32552A3180044CFF4 /* AppDelegate.swift */; };
 		806A86B62552A3180044CFF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A86B52552A3180044CFF4 /* SceneDelegate.swift */; };
 		806A86B82552A3180044CFF4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A86B72552A3180044CFF4 /* ContentView.swift */; };
@@ -53,6 +55,8 @@
 		8001FE932552ECDE0048FD1F /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		8001FE982552EF3E0048FD1F /* TripAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripAddView.swift; sourceTree = "<group>"; };
 		8001FEA525540F960048FD1F /* TripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripView.swift; sourceTree = "<group>"; };
+		8001FEAA255412720048FD1F /* ScheduleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleListView.swift; sourceTree = "<group>"; };
+		8001FEAF255413C40048FD1F /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		806A86B02552A3180044CFF4 /* TripPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		806A86B32552A3180044CFF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		806A86B52552A3180044CFF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -152,6 +156,8 @@
 			isa = PBXGroup;
 			children = (
 				806A86B32552A3180044CFF4 /* AppDelegate.swift */,
+				8001FEAA255412720048FD1F /* ScheduleListView.swift */,
+				8001FEAF255413C40048FD1F /* AccountView.swift */,
 				8001FE832552E56C0048FD1F /* TripListView.swift */,
 				806A86B52552A3180044CFF4 /* SceneDelegate.swift */,
 				806A86B72552A3180044CFF4 /* ContentView.swift */,
@@ -431,9 +437,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8001FEAB255412720048FD1F /* ScheduleListView.swift in Sources */,
 				8001FE942552ECDE0048FD1F /* Schedule.swift in Sources */,
 				806A86ED2552A5860044CFF4 /* Trip.swift in Sources */,
 				806A86B42552A3180044CFF4 /* AppDelegate.swift in Sources */,
+				8001FEB0255413C40048FD1F /* AccountView.swift in Sources */,
 				8001FEA625540F960048FD1F /* TripView.swift in Sources */,
 				806A86B62552A3180044CFF4 /* SceneDelegate.swift in Sources */,
 				8001FE992552EF3E0048FD1F /* TripAddView.swift in Sources */,
