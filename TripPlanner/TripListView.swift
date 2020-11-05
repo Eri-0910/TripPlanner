@@ -9,19 +9,29 @@ import SwiftUI
 import RealmSwift
 
 struct TripListView: View {
-    @ObservedObject var trips = Trips()
+    @ObservedObject var tripsObj = Trips()
     var body: some View {
-        List {
-            ForEach(trips.trips, id: \.id) { trips in
-                        Button(action: {
-                        }) {
-                            Text("\(trips.name)")
+        NavigationView{
+            List {
+                ForEach(tripsObj.trips, id: \.name) { trip in
+                    NavigationLink(destination:TripView()){
+                        VStack {
+                            Text("\(trip.name)")
                         }
                     }
                 }
+            }
+        }
     }
 }
 
 class Trips: ObservableObject {
-    @Published var trips: [Trip] = (try? Realm().objects(Trip.self).map { $0 }) ?? []
+    //@Published var trips: [Trip] = (try? Realm().objects(Trip.self).map { $0 }) ?? []
+    @Published var trips: Results<Trip> = try! Realm().objects(Trip.self)
+}
+
+struct TripListView_Previews: PreviewProvider {
+    static var previews: some View {
+        TripListView()
+    }
 }
