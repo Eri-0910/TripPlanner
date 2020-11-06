@@ -21,16 +21,18 @@ class Schedule: Object, Identifiable {
     @objc dynamic var address = ""
     let trip = LinkingObjects(fromType: Trip.self, property: "schedule")
     
-    func save() {
+    func save() -> Int{
            let realm = try! Realm()
            if realm.isInWriteTransaction {
                if self.id == 0 { self.id = self.createNewId() }
                realm.add(self)
+            return self.id
            } else {
                try! realm.write {
                    if self.id == 0 { self.id = self.createNewId() }
                    realm.add(self)
                }
+                return self.id
            }
        }
 
