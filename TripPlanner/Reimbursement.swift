@@ -12,6 +12,7 @@ import RealmSwift
 class Reimbursement: Object {
     
     @objc dynamic var id = 0
+    @objc dynamic var title = ""
     @objc dynamic var amount = 0
     @objc dynamic var creditor : Member?
     let debtor = List<Member>()

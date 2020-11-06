@@ -29,7 +29,9 @@ struct AccountView: View {
                 } else {
                     List{
                         ForEach(trip.reimbursement, id:\.id){ (reimbursement: Reimbursement) in
-                            Text(String(reimbursement.amount))
+                            NavigationLink(destination:ReimbursementView(reimbursement:reimbursement)){
+                                Text(String(reimbursement.amount) + "円" + " " + String(reimbursement.title))
+                            }
                         }
                     }
                 }

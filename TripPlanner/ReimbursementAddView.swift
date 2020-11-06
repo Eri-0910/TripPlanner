@@ -11,16 +11,19 @@ import RealmSwift
 struct ReimbursementAddView: View {
     var trip = Trip()
     @State dynamic var amount = ""
+    @State dynamic var title = ""
     @State var debtors:Set<Int> = Set<Int>()
     @State var creditor:Int?
     @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
-        VStack{
+        Form{
+            TextField("タイトルを入力", text:$title)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
             TextField("支払金額を入力", text:$amount)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
-            Section{
-                Text("立て替えた人")
+                .keyboardType(UIKeyboardType.numberPad)
+            Section(header: Text("立て替えた人")){
                 List(selection: $creditor) {
                     ForEach(trip.member, id: \.self) { member in
                         MultipleSelectionRow(
@@ -36,8 +39,7 @@ struct ReimbursementAddView: View {
                     }
                 }
             }
-            Section{
-                Text("立て替えてもらった人")
+            Section(header: Text("立て替えてもらった人")){
                 List{
                     ForEach(trip.member, id: \.self) { member in
                         MultipleSelectionRow(
@@ -53,7 +55,7 @@ struct ReimbursementAddView: View {
                     }
                 }
             }
-            Button(action: {addReimbursementToTrip(trip:trip, amount: amount, debtors:debtors, creditor:creditor ?? 0)
+            Button(action: {addReimbursementToTrip(trip:trip, title: title, amount: amount, debtors:debtors, creditor:creditor ?? 0)
                 self.presentationMode.wrappedValue.dismiss()
             }, label: {
                 Text("登録")
@@ -90,10 +92,11 @@ struct SingleSelectionRow: View {
     }
 }
 
-func addReimbursementToTrip(trip: Trip, amount: String, debtors:Set<Int>, creditor:Int) -> Void {
+func addReimbursementToTrip(trip: Trip, title: String, amount: String, debtors:Set<Int>, creditor:Int) -> Void {
     let realm = try! Realm()
     let reimbursement = Reimbursement()
-    if((Int(amount) != nil) && !debtors.isEmpty ){
+    if(!title.isEmpty && (Int(amount) != nil) && !debtors.isEmpty ){
+        reimbursement.title = title
         reimbursement.amount = Int(amount)!
         let debtors_member = realm.objects(Member.self).filter("id IN %@", debtors)
         reimbursement.debtor.append(objectsIn:debtors_member)

@@ -22,6 +22,7 @@
 		8008917525554342005C5411 /* MemberAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8008917425554342005C5411 /* MemberAddView.swift */; };
 		8008917A25554353005C5411 /* PayOffAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8008917925554353005C5411 /* PayOffAddView.swift */; };
 		8008917F25554366005C5411 /* ReimbursementAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8008917E25554366005C5411 /* ReimbursementAddView.swift */; };
+		80089187255582C6005C5411 /* ReimbursementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80089186255582C6005C5411 /* ReimbursementView.swift */; };
 		806A86B42552A3180044CFF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A86B32552A3180044CFF4 /* AppDelegate.swift */; };
 		806A86B62552A3180044CFF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A86B52552A3180044CFF4 /* SceneDelegate.swift */; };
 		806A86B82552A3180044CFF4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A86B72552A3180044CFF4 /* ContentView.swift */; };
@@ -73,6 +74,7 @@
 		8008917425554342005C5411 /* MemberAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberAddView.swift; sourceTree = "<group>"; };
 		8008917925554353005C5411 /* PayOffAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayOffAddView.swift; sourceTree = "<group>"; };
 		8008917E25554366005C5411 /* ReimbursementAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReimbursementAddView.swift; sourceTree = "<group>"; };
+		80089186255582C6005C5411 /* ReimbursementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReimbursementView.swift; sourceTree = "<group>"; };
 		806A86B02552A3180044CFF4 /* TripPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		806A86B32552A3180044CFF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		806A86B52552A3180044CFF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 				8001FEC125552E610048FD1F /* Member.swift */,
 				8001FECB25552EC40048FD1F /* PayOff.swift */,
 				8001FEC625552E8B0048FD1F /* Reimbursement.swift */,
+				80089186255582C6005C5411 /* ReimbursementView.swift */,
 				8008917425554342005C5411 /* MemberAddView.swift */,
 				8008917925554353005C5411 /* PayOffAddView.swift */,
 				8008917E25554366005C5411 /* ReimbursementAddView.swift */,
@@ -464,6 +467,7 @@
 				8001FEC725552E8B0048FD1F /* Reimbursement.swift in Sources */,
 				8001FEAB255412720048FD1F /* ScheduleListView.swift in Sources */,
 				8001FE942552ECDE0048FD1F /* Schedule.swift in Sources */,
+				80089187255582C6005C5411 /* ReimbursementView.swift in Sources */,
 				8001FECC25552EC40048FD1F /* PayOff.swift in Sources */,
 				806A86ED2552A5860044CFF4 /* Trip.swift in Sources */,
 				8008917F25554366005C5411 /* ReimbursementAddView.swift in Sources */,
