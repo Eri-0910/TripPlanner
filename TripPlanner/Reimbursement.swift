@@ -1,22 +1,21 @@
 //
-//  Trip.swift
+//  Reimbursement.swift
 //  TripPlanner
 //
-//  Created by 山河絵利奈 on 2020/11/04.
+//  Created by 山河絵利奈 on 2020/11/06.
+//
 //
 
 import Foundation
 import RealmSwift
 
-class Trip: Object {
+class Reimbursement: Object {
+    
     @objc dynamic var id = 0
-    @objc dynamic var name = ""
-    @objc dynamic var start = Date()
-    @objc dynamic var end = Date()
-    let schedule = List<Schedule>()
-    let member = List<Member>()
-    let reimbursement = List<Reimbursement>()
-    let payOff = List<PayOff>()
+    @objc dynamic var amount = 0
+    @objc dynamic var creditor : Member?
+    let debtor = List<Member>()
+    let trip = LinkingObjects(fromType: Trip.self, property: "reimbursement")
     
     func save() {
            let realm = try! Realm()
