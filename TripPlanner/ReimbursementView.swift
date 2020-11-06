@@ -10,6 +10,7 @@ import RealmSwift
 
 struct ReimbursementView: View {
     var reimbursement = Reimbursement()
+    @Environment(\.presentationMode) var presentationMode
     var body: some View {
         Form{
             Section(header: Text("タイトル")){
@@ -32,6 +33,13 @@ struct ReimbursementView: View {
                     }
                 }
             }
+            Button(action: {
+                let realm = try! Realm()
+                try! realm.write {
+                    realm.delete(reimbursement)
+                }
+                self.presentationMode.wrappedValue.dismiss()
+            }){Text("削除")}
         }
     }
 }

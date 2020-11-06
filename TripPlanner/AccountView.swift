@@ -10,14 +10,25 @@ import RealmSwift
 
 struct AccountView: View {
     var trip = Trip()
+    
     var body: some View {
         Form{
             Section(header: Text("メンバー")) {
                 if (trip.member.count == 0) {
                     Text("メンバーがいません")
                 } else {
-                    ForEach(trip.member, id:\.id){ member in
-                        Text(member.nickname)
+                    List{
+                        ForEach(trip.member, id:\.id){ member in
+                            NavigationLink(destination:MemberView(trip:trip, member:member)){
+                                HStack{
+                                    Text(member.nickname)
+                                    Spacer()
+                                    Text(String(toPay(member:member)))
+                                        .foregroundColor(toPay(member: member)<0 ? Color.red : Color.green)
+                                    
+                                }
+                            }
+                        }
                     }
                 }
                 NavigationLink(destination:MemberAddView(trip:trip)){Text("+")}
