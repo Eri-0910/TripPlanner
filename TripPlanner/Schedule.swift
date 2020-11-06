@@ -9,13 +9,17 @@
 import Foundation
 import RealmSwift
 
-class Schedule: Object {
+class Schedule: Object, Identifiable {
     
     @objc dynamic var id = 0
     @objc dynamic var title = ""
     @objc dynamic var memo = ""
+    @objc dynamic var day = ""
     @objc dynamic var start = Date()
     @objc dynamic var end = Date()
+    @objc dynamic var tell = ""
+    @objc dynamic var address = ""
+    let trip = LinkingObjects(fromType: Trip.self, property: "schedule")
     
     func save() {
            let realm = try! Realm()
