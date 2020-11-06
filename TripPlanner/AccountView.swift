@@ -27,8 +27,10 @@ struct AccountView: View {
                 if (trip.reimbursement.count == 0) {
                     Text("会計情報がありません")
                 } else {
-                    ForEach(trip.reimbursement, id:\.id){ (reimbursement: Reimbursement) in
-                        Text(String(reimbursement.amount))
+                    List{
+                        ForEach(trip.reimbursement, id:\.id){ (reimbursement: Reimbursement) in
+                            Text(String(reimbursement.amount))
+                        }
                     }
                 }
                 NavigationLink(destination:ReimbursementAddView(trip:trip)){Text("+")}
@@ -37,8 +39,16 @@ struct AccountView: View {
                 if (trip.payOff.count == 0) {
                     Text("精算情報がありません")
                 } else {
-                    ForEach(trip.payOff, id:\.id){ (payOff: PayOff) in
-                        Text(String(payOff.amount))
+                    List{
+                        ForEach(trip.payOff, id:\.id){ (payOff: PayOff) in
+                            Group{
+                                if(payOff.payer != nil && payOff.recipient != nil){
+                                    Text(String(payOff.amount) + "円 " + payOff.payer!.nickname + "から" + payOff.recipient!.nickname )
+                                }else{
+                                    Text(String(payOff.amount) + "円")
+                                }
+                            }
+                        }
                     }
                 }
                 NavigationLink(destination:PayOffAddView(trip:trip)){Text("+")}
