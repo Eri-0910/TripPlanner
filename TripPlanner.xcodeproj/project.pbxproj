@@ -24,6 +24,9 @@
 		8008917F25554366005C5411 /* ReimbursementAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8008917E25554366005C5411 /* ReimbursementAddView.swift */; };
 		80089187255582C6005C5411 /* ReimbursementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80089186255582C6005C5411 /* ReimbursementView.swift */; };
 		8008918C25558895005C5411 /* MemberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8008918B25558895005C5411 /* MemberView.swift */; };
+		80089191255612DA005C5411 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80089190255612DA005C5411 /* Memo.swift */; };
+		800891962556130F005C5411 /* MemoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800891952556130F005C5411 /* MemoListView.swift */; };
+		8008919E25561798005C5411 /* MemoAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8008919D25561798005C5411 /* MemoAddView.swift */; };
 		806A86B42552A3180044CFF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A86B32552A3180044CFF4 /* AppDelegate.swift */; };
 		806A86B62552A3180044CFF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A86B52552A3180044CFF4 /* SceneDelegate.swift */; };
 		806A86B82552A3180044CFF4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A86B72552A3180044CFF4 /* ContentView.swift */; };
@@ -77,6 +80,9 @@
 		8008917E25554366005C5411 /* ReimbursementAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReimbursementAddView.swift; sourceTree = "<group>"; };
 		80089186255582C6005C5411 /* ReimbursementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReimbursementView.swift; sourceTree = "<group>"; };
 		8008918B25558895005C5411 /* MemberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberView.swift; sourceTree = "<group>"; };
+		80089190255612DA005C5411 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		800891952556130F005C5411 /* MemoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListView.swift; sourceTree = "<group>"; };
+		8008919D25561798005C5411 /* MemoAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoAddView.swift; sourceTree = "<group>"; };
 		806A86B02552A3180044CFF4 /* TripPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		806A86B32552A3180044CFF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		806A86B52552A3180044CFF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -197,8 +203,11 @@
 				8001FEC625552E8B0048FD1F /* Reimbursement.swift */,
 				80089186255582C6005C5411 /* ReimbursementView.swift */,
 				8008917425554342005C5411 /* MemberAddView.swift */,
+				8008919D25561798005C5411 /* MemoAddView.swift */,
 				8008917925554353005C5411 /* PayOffAddView.swift */,
 				8008917E25554366005C5411 /* ReimbursementAddView.swift */,
+				80089190255612DA005C5411 /* Memo.swift */,
+				800891952556130F005C5411 /* MemoListView.swift */,
 			);
 			path = TripPlanner;
 			sourceTree = "<group>";
@@ -467,6 +476,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80089191255612DA005C5411 /* Memo.swift in Sources */,
 				8001FEC725552E8B0048FD1F /* Reimbursement.swift in Sources */,
 				8001FEAB255412720048FD1F /* ScheduleListView.swift in Sources */,
 				8001FE942552ECDE0048FD1F /* Schedule.swift in Sources */,
@@ -475,6 +485,7 @@
 				806A86ED2552A5860044CFF4 /* Trip.swift in Sources */,
 				8008917F25554366005C5411 /* ReimbursementAddView.swift in Sources */,
 				806A86B42552A3180044CFF4 /* AppDelegate.swift in Sources */,
+				800891962556130F005C5411 /* MemoListView.swift in Sources */,
 				8001FEB0255413C40048FD1F /* AccountView.swift in Sources */,
 				8008917A25554353005C5411 /* PayOffAddView.swift in Sources */,
 				8001FEBA25543E4B0048FD1F /* ScheduleView.swift in Sources */,
@@ -483,6 +494,7 @@
 				8008917525554342005C5411 /* MemberAddView.swift in Sources */,
 				8001FE992552EF3E0048FD1F /* TripAddView.swift in Sources */,
 				8001FEC225552E610048FD1F /* Member.swift in Sources */,
+				8008919E25561798005C5411 /* MemoAddView.swift in Sources */,
 				8001FE842552E56C0048FD1F /* TripListView.swift in Sources */,
 				806A86B82552A3180044CFF4 /* ContentView.swift in Sources */,
 				8008918C25558895005C5411 /* MemberView.swift in Sources */,

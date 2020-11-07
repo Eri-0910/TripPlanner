@@ -16,6 +16,8 @@ struct TripView: View {
                 .tabItem { Text("スケジュール") }
             AccountView(trip:trip)
                 .tabItem { Text("会計") }
+            MemoListView(trip:trip)
+                .tabItem { Text("メモ") }
         }.navigationBarTitle("\(trip.name)")
     }
 }
